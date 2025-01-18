@@ -130,10 +130,10 @@ After setting up the environment and configuring settings:
 2. **Run the Application**:
 
     ```bash
-    python main.py
+    python keyboardvis.py
     ```
 
-> **Note**: Replace `main.py` with the actual name of your Python script if different.
+> **Note**: Replace `keyboardvis.py` with the actual name of your Python script if different.
 
 ### Creating an Executable
 
@@ -158,19 +158,19 @@ To distribute your application without requiring users to install Python and dep
     - **Basic Command**:
 
         ```bash
-        pyinstaller --onefile --windowed main.py
+        pyinstaller --onefile --windowed keyboardvis.py
         ```
 
     - **With Custom Icon** (Optional):
 
         ```bash
-        pyinstaller --onefile --windowed --icon=assets/icon.ico main.py
+        pyinstaller --onefile --windowed --icon=assets/icon.ico keyboardvis.py
         ```
 
     - **Including `config.json`**:
 
         ```bash
-        pyinstaller --onefile --windowed --icon=assets/icon.ico --add-data "config.json;." main.py
+        pyinstaller --onefile --windowed --icon=assets/icon.ico --add-data "config.json;." keyboardvis.py
         ```
 
         > **Note**: 
@@ -181,7 +181,7 @@ To distribute your application without requiring users to install Python and dep
         > Example for **macOS/Linux**:
 
         ```bash
-        pyinstaller --onefile --windowed --icon=assets/icon.ico --add-data "config.json:." main.py
+        pyinstaller --onefile --windowed --icon=assets/icon.ico --add-data "config.json:." keyboardvis.py
         ```
 
 4. **Locate the Executable**:
